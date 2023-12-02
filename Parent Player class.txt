@@ -1,0 +1,79 @@
+// Parent Player class
+class Player {
+    private String name;
+    private int age;
+    
+    public Player(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public void displayPlayerInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+// CricketPlayer class
+class CricketPlayer extends Player {
+    private String role;
+    
+    public CricketPlayer(String name, int age, String role) {
+        super(name, age);
+        this.role = role;
+    }
+    
+    public void displayCricketPlayerInfo() {
+        super.displayPlayerInfo();
+        System.out.println("Role: " + role);
+    }
+}
+
+// FootballPlayer class
+class FootballPlayer extends Player {
+    private String position;
+    
+    public FootballPlayer(String name, int age, String position) {
+        super(name, age);
+        this.position = position;
+    }
+    
+    public void displayFootballPlayerInfo() {
+        super.displayPlayerInfo();
+        System.out.println("Position: " + position);
+    }
+}
+
+// HockeyPlayer class
+class HockeyPlayer extends Player {
+    private String position;
+    
+    public HockeyPlayer(String name, int age, String position) {
+        super(name, age);
+        this.position = position;
+    }
+    
+    public void displayHockeyPlayerInfo() {
+        super.displayPlayerInfo();
+        System.out.println("Position: " + position);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating instances of different types of players
+        CricketPlayer cricketPlayer = new CricketPlayer("Sachin", 45, "Batsman");
+        FootballPlayer footballPlayer = new FootballPlayer("Messi", 34, "Forward");
+        HockeyPlayer hockeyPlayer = new HockeyPlayer("Dhyan Chand", 110, "Forward");
+
+        // Displaying player information
+        System.out.println("Cricket Player:");
+        cricketPlayer.displayCricketPlayerInfo();
+        
+        System.out.println("\nFootball Player:");
+        footballPlayer.displayFootballPlayerInfo();
+        
+        System.out.println("\nHockey Player:");
+        hockeyPlayer.displayHockeyPlayerInfo();
+    }
+}
