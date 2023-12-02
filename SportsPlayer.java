@@ -61,7 +61,8 @@ class HockeyPlayer extends Player
     }
 }
 
-class SportsPlayer {
+class SportsPlayer 
+{
     public static void main(String[] args) 
     {
         CricketPlayer cricketPlayer = new CricketPlayer("Sachin Tendulkar", "India");
