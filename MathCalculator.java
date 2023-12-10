@@ -1,4 +1,4 @@
- class Calculator {
+ class MathCalculator {
     // Method for addition
         int add(int num1, int num2) {
         return num1 + num2;
@@ -24,7 +24,7 @@
     }
 
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
+        MathCalculator  calculator = new MathCalculator();
 
         // Perform some calculations
         int result1 = calculator.add(10, 5);
