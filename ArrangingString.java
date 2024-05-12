@@ -1,3 +1,4 @@
+//aranging the names in decreasing order
 import java.util.*;
 class ArrangingString   
 {  
